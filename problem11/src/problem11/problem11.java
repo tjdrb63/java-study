@@ -7,23 +7,16 @@ public class problem11 {
 	{
 		int tall, kg , basic;
 		Scanner input = new Scanner(System.in);
-		System.out.println("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("í‚¤ë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		tall = input.nextInt();
-		System.out.println("¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ëª¸ë¬´ê²Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		kg = input.nextInt();
 		basic = (tall - 100) *  9/10;
-		if(kg > basic)
-		{
-			System.out.println("°úÃ¼ÁßÀÔ´Ï´Ù");
-		}
-		else if(kg == basic)
-		{
-			System.out.println("Ç¥ÁØÀÔ´Ï´Ù");
-		}
-		else
-		{
-			System.out.println("ÀúÃ¼ÁßÀÔ´Ï´Ù");
-		}
+		
+		if(kg > basic)	System.out.println("ê³¼ì²´ì¤‘ìž…ë‹ˆë‹¤");
+		else if(kg == basic)	System.out.println("í‘œì¤€ìž…ë‹ˆë‹¤");
+		else	System.out.println("ì €ì²´ì¤‘ìž…ë‹ˆë‹¤");
+		
 		System.out.println(basic);
 	}
 }
